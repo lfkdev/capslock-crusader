@@ -53,8 +53,9 @@ While you press the legendary CapsLock key, your keyboard undergoes a transforma
 | Alt + u                  | ü                        
 | Alt + '                  | `                        
 | CTRL + SHIFT + B         | Create new file *1
+| CTRL + SHIFT + C         | Copy path of selected file *1
 
-<b>*1 : Please note that creating a new file via `CTRL + SHIFT + B` is specifically designed for Windows Explorer and may not work with other file explorer applications.<b>
+<b>*1 : Please note that creating a new file and copy path of selected file is specifically designed for Windows Explorer and may not work with other file explorer applications.<b>
 
 ## Installation
 * Install AutoHotkey v1 (the secret ingredient)
