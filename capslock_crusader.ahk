@@ -58,11 +58,11 @@ return
 PgUp::Send, ^{Left} ; Ctrl + Left Arrow
 PgDn::Send, ^{Right} ; Ctrl + Right Arrow
 
-!e::Send, € ; Alt + e for Euro symbol
-!a::Send, ä ; Alt + a for ä
-!o::Send, ö ; Alt + o for ö
-!u::Send, ü ; Alt + u for ü
-!'::Send, `` ; Alt + ' for backtick
+!e::Send, €
+!a::Send, ä
+!o::Send, ö
+!u::Send, ü
+!'::Send, ``
 
 SendTilde:
   Send, ~
@@ -86,17 +86,14 @@ ArrowLeft:
 return
 
 NextSong:
-  ; Replace with your media player's hotkey for next song
   Send {Media_Next}
 return
 
 PauseSong:
-  ; Replace with your media player's hotkey for pause
   Send {Media_Play_Pause}
 return
 
 LastSong:
-  ; Replace with your media player's hotkey for previous song
   Send {Media_Prev}
 return
 
