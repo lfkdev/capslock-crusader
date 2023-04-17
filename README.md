@@ -1,5 +1,5 @@
 ## CapsLock Crusader: Unleash Your Keyboard's Hidden Potential! 🦸
-Have you ever felt like your keyboard could do more? Of course, you have! Introducing the CapsLock Crusader - the AHK (v1) script that unleashes the hidden potential of your keyboard. No more fumbling with complicated key combos or wrestling with proprietary software from literal hell, just so realize it doesn't support rebinding the FN key. This script is here to save the day!
+Have you ever felt like your keyboard could do more? Of course, you have! Introducing the CapsLock Crusader - the AHK (v1) script that unleashes the hidden potential of your keyboard. No more fumbling with complicated key combos or wrestling with proprietary software from literal hell, just to realize it doesn't support rebinding the FN key.
 
 Arrow keys, F-Row, Volume Settings etc. are often inconveniently placed, requiring unnecessary hand movements. By reducing the need to constantly move your hand away from the home row, you can improve your efficiency and productivity. 
 
