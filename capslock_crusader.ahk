@@ -55,14 +55,73 @@ ListLines Off
   Hotkey, *Escape, SendTilde, Off
 return
 
+^+b::
+    FileName := "awesome_file.txt"
+    CurrentFolder := GetActiveFolderPath()
+    if (CurrentFolder = "")
+        return
+
+    FilePath := CurrentFolder . "\" . FileName
+    IfNotExist, %FilePath%
+    {
+        FileAppend, , %FilePath%
+    }
+return
+
+GetActiveFolderPath() {
+    explorerHwnd := WinExist("ahk_class CabinetWClass") ? WinExist("ahk_class CabinetWClass") : WinExist("ahk_class ExploreWClass")
+    if !explorerHwnd
+        return ""
+
+    for window in ComObjCreate("Shell.Application").Windows
+    {
+        if (window.hwnd == explorerHwnd)
+            return window.Document.Folder.Self.Path
+    }
+
+    return ""
+}
+
+^+c:: ; Ctrl + Shift + C to copy the path of the currently selected file
+    ; Get the selected file's path in the currently active folder in Windows Explorer
+    SelectedFilePath := GetSelectedFilePath()
+
+    ; If no file is selected, exit
+    if (SelectedFilePath = "")
+        return
+
+    ; Copy the file path to the clipboard
+    Clipboard := SelectedFilePath
+return
+
+GetSelectedFilePath() {
+    explorerHwnd := WinExist("ahk_class CabinetWClass") ? WinExist("ahk_class CabinetWClass") : WinExist("ahk_class ExploreWClass")
+    if !explorerHwnd
+        return ""
+
+    selectedFile := ""
+
+    for window in ComObjCreate("Shell.Application").Windows {
+        if (window.hwnd == explorerHwnd) {
+            items := window.Document.SelectedItems()
+            if (items.Count = 1) {
+                selectedFile := items.Item(0).Path
+            }
+
+            break
+        }
+    }
+    return selectedFile
+}
+
 PgUp::Send, ^{Left} ; Ctrl + Left Arrow
 PgDn::Send, ^{Right} ; Ctrl + Right Arrow
 
-!e::Send, €
-!a::Send, ä
-!o::Send, ö
-!u::Send, ü
-!'::Send, ``
+!e::Send, € ; Alt + e for Euro symbol
+!a::Send, ä ; Alt + a for ä
+!o::Send, ö ; Alt + o for ö
+!u::Send, ü ; Alt + u for ü
+!'::Send, `` ; Alt + ' for backtick
 
 SendTilde:
   Send, ~
@@ -86,14 +145,17 @@ ArrowLeft:
 return
 
 NextSong:
+  ; Replace with your media player's hotkey for next song
   Send {Media_Next}
 return
 
 PauseSong:
+  ; Replace with your media player's hotkey for pause
   Send {Media_Play_Pause}
 return
 
 LastSong:
+  ; Replace with your media player's hotkey for previous song
   Send {Media_Prev}
 return
 

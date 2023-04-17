@@ -12,40 +12,49 @@ This custom keybinding layout offers improved ergonomics and efficiency by optim
 - 🌍 Special characters
 - 🚀 Custom function keys
 
+# Custom functions:
+- Create new file in current directory `CTRL + SHIFT + B` 📄
+- Copy path of selected file into clipboard `CTRL + SHIFT + C` 📋🔗
+
+<b>Custom functions are only tested under Windows Explorer<b>
+
 ## How it works
 While you press the legendary CapsLock key, your keyboard undergoes a transformation:
 
-| Original Key Combination | Remapped Key Combination | Function                         |
-|--------------------------|--------------------------|----------------------------------|
-| CapsLock + w             | Up Arrow                 | Move Up                          |
-| CapsLock + s             | Down Arrow               | Move Down                        |
-| CapsLock + d             | Right Arrow              | Move Right                       |
-| CapsLock + a             | Left Arrow               | Move Left                        |
-| CapsLock + v             | Media_Next               | Next Song                        |
-| CapsLock + c             | Media_Play_Pause         | Pause/Play Song                  |
-| CapsLock + x             | Media_Prev               | Previous Song                    |
-| CapsLock + ]             | End                      | Move to End                      |
-| CapsLock + [             | Home                     | Move to Home                     |
-| CapsLock + /             | Delete                   | Delete                           |
-| CapsLock + e             | Volume_Up                | Increase Volume                  |
-| CapsLock + q             | Volume_Down              | Decrease Volume                  |
-| CapsLock + Escape        | ~                        | Send Tilde (~)                   |
-| CapsLock + 1             | F1                       | F1 Function Key                  |
-| CapsLock + 2             | F2                       | F2 Function Key                  |
-| CapsLock + 3             | F3                       | F3 Function Key                  |
-| CapsLock + 4             | F4                       | F4 Function Key                  |
-| CapsLock + 5             | F5                       | F5 Function Key                  |
-| CapsLock + 6             | F6                       | F6 Function Key                  |
-| CapsLock + 7             | F7                       | F7 Function Key                  |
-| CapsLock + 8             | F8                       | F8 Function Key                  |
-| CapsLock + 9             | F9                       | F9 Function Key                  |
-| PgUp                     | Ctrl + Left Arrow        | Move to Previous Word            |
-| PgDn                     | Ctrl + Right Arrow       | Move to Next Word                |
-| Alt + e                  | €                        | Send Euro Symbol (€)             |
-| Alt + a                  | ä                        | Send Lowercase Umlaut A (ä)      |
-| Alt + o                  | ö                        | Send Lowercase Umlaut O (ö)      |
-| Alt + u                  | ü                        | Send Lowercase Umlaut U (ü)      |
-| Alt + '                  | `                        | Send Backtick                    |
+| Original Key Combination | Remapped Key Combination 
+|--------------------------|--------------------------
+| CapsLock + w             | Up Arrow                 
+| CapsLock + s             | Down Arrow               
+| CapsLock + d             | Right Arrow              
+| CapsLock + a             | Left Arrow               
+| CapsLock + v             | Media_Next               
+| CapsLock + c             | Media_Play_Pause         
+| CapsLock + x             | Media_Prev               
+| CapsLock + ]             | End                      
+| CapsLock + [             | Home                     
+| CapsLock + /             | Delete                   
+| CapsLock + e             | Volume_Up                
+| CapsLock + q             | Volume_Down              
+| CapsLock + Escape        | ~                        
+| CapsLock + 1             | F1                       
+| CapsLock + 2             | F2                       
+| CapsLock + 3             | F3                       
+| CapsLock + 4             | F4                       
+| CapsLock + 5             | F5                       
+| CapsLock + 6             | F6                       
+| CapsLock + 7             | F7                       
+| CapsLock + 8             | F8                       
+| CapsLock + 9             | F9                       
+| PgUp                     | Ctrl + Left Arrow        
+| PgDn                     | Ctrl + Right Arrow       
+| Alt + e                  | €                        
+| Alt + a                  | ä                        
+| Alt + o                  | ö                        
+| Alt + u                  | ü                        
+| Alt + '                  | `                        
+| CTRL + SHIFT + B         | Create new file *1
+
+<b>*1 : Please note that creating a new file via `CTRL + SHIFT + B` is specifically designed for Windows Explorer and may not work with other file explorer applications.<b>
 
 ## Installation
 * Install AutoHotkey v1 (the secret ingredient)
