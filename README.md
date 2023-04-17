@@ -13,7 +13,6 @@ Arrow keys, F-Row, Volume Settings etc. are often inconveniently placed, requiri
 
 ## How it works
 While you press the legendary CapsLock key, your keyboard undergoes a transformation:
-
 - WASD ➡️ Arrow keys
 - V, C, X ➡️ Media controls
 - ], [ ➡️ End, Home
@@ -23,13 +22,12 @@ While you press the legendary CapsLock key, your keyboard undergoes a transforma
 - 1-9 ➡️ F1-F9
 
 And that's not all! We've even thrown in some bonus incantations:
-
 - Page Up ➡️ Ctrl + Left Arrow
 - Page Down ➡️ Ctrl + Right Arrow 
-- Alt + E ➡️ Euro (€)
-- Alt + A ➡️ ä
-- Alt + O ➡️ ö
-- Alt + U ➡️ ü
+- Alt + e ➡️ Euro (€)
+- Alt + a ➡️ ä
+- Alt + o ➡️ ö
+- Alt + u ➡️ ü
 - Alt + ' ➡️ Backtick (`)
 
 ## Installation
