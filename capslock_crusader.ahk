@@ -30,6 +30,9 @@ ListLines Off
   Hotkey, *7, F7key, On
   Hotkey, *8, F8key, On
   Hotkey, *9, F9key, On
+  Hotkey, *0, F10key, On
+  Hotkey, *-, F11key, On
+  Hotkey, *=, F12key, On
   KeyWait, CapsLock
   Hotkey, *1, F1key, Off
   Hotkey, *2, F2key, Off
@@ -40,6 +43,9 @@ ListLines Off
   Hotkey, *7, F7key, Off
   Hotkey, *8, F8key, Off
   Hotkey, *9, F9key, Off
+  Hotkey, *0, F10key, Off
+  Hotkey, *-, F11key, Off
+  Hotkey, *=, F12key, Off
   Hotkey, *w, ArrowUp, Off
   Hotkey, *s, ArrowDown, Off
   Hotkey, *d, ArrowRight, Off
@@ -82,15 +88,12 @@ GetActiveFolderPath() {
     return ""
 }
 
-^+c:: ; Ctrl + Shift + C to copy the path of the currently selected file
-    ; Get the selected file's path in the currently active folder in Windows Explorer
+^+c::
     SelectedFilePath := GetSelectedFilePath()
 
-    ; If no file is selected, exit
     if (SelectedFilePath = "")
         return
 
-    ; Copy the file path to the clipboard
     Clipboard := SelectedFilePath
 return
 
@@ -213,4 +216,16 @@ return
 
 F9key:
   Send {F9}
+return
+
+F10key:
+  Send {F10}
+return
+
+F11key:
+  Send {F11}
+return
+
+F12key:
+  Send {F12}
 return
